@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<!-- insert your AIML categories here -->
+	<category>
+	    <pattern>HI</pattern>
+	    <template>Hello! Let's decide your new <set name="topic">career</set> together!<br/><br/>Do you prefer working with people or programs?</template>
+	</category>
+	<category>
+	    <pattern>HELLO</pattern>
+	    <template><srai>HI</srai></template>
+	</category>
+	<category>
+	    <pattern>HOWDY</pattern>
+	    <template>
+	    <br/>Fun fact, I was made in the South!<br/><srai>HI</srai></template>
+	</category>
+	<category>
+	    <pattern>GREETINGS</pattern>
+	    <template><srai>HI</srai></template>
+	</category>
+	<category>
+	    <pattern>YO</pattern>
+	    <template><srai>HI</srai></template>
+	</category>
+	<category>
+	    <pattern>HI *</pattern>
+	    <template><srai>HI</srai></template>
+	</category>
+	
+	
+	<topic name="career"> 
+	
+	<category>
+	    <pattnern>*</pattnern>
+	    <template>Looks LIKE WE MADE IT</template>
+	</category>
+	    
+	    <category>
+	        <pattern>PEOPLE</pattern>
+	        <template>I recommend you become a teacher!!!</template>
+	    </category>
+	    
+	    <category>
+	        <pattern>PROGRAMS</pattern>
+	        <template>Website work is very popular. Can you picture yourself enjoying working on a website?</template>
+	    </category>
+	    <category>
+	        <pattern>PROGRAM</pattern>
+	        <template><srai>PROGRAMS</srai></template>
+	    </category>
+	    <category>
+	        <pattern>*</pattern>
+	        <that>^ DO YOU PREFER WORKING WITH PEOPLE OR PROGRAMS</that>
+	        <template>Something went wrong. Try saying 'HI' again.</template>
+	    </category>
+	   
+	    
+	    <category> 
+	        <pattern>YES</pattern>
+	        <that>^ WORKING ON A *</that>
+	        <template>Compare the keywords Design and Develop then input the keyword that appeals most to you.</template>
+	    </category>
+	    
+	    <category>
+	        <pattern>DESIGN</pattern>
+	        <that>COMPARE THE KEYWORDS DESIGN AND DEVELOP *</that>
+	        <template>I recommend you become a front-end website developer!!!</template>
+	    </category>
+	    <category>
+	        <pattern>DEVELOP</pattern>
+	        <that>COMPARE THE KEYWORDS DESIGN AND DEVELOP *</that>
+	        <template>I recommend you become a back-end webiste developer!!!</template>
+	    </category>
+	    <category>
+	        <pattern>*</pattern>
+	        <that>^ WORKING ON A *</that>
+	        <template>Something went wrong. Try saying 'HI' again.</template>
+	    </category>
+	    
+	    
+	    <category>
+	        <pattern>NO</pattern>
+	        <that>^ WORKING ON A WEBSITE</that>
+	        <template>Would you like to be a data analyst?</template>
+	    </category>
+	    <category>
+	        <pattern>YES</pattern>
+	        <that>* DATA ANALYST</that>
+	        <template>I recommend you become a data analyst!!!</template>
+	    </category>
+	    <category>
+	        <pattern>NO</pattern>
+	        <that>* DATA ANALYST</that>
+	        <template>I recommend you become a software engineer!!!</template>
+	    </category>
+	    <category>
+	        <pattern>*</pattern>
+	        <that>* DATA ANALYST</that>
+	        <template>Something went wrong. Try saying 'HI' again.</template>
+	    </category>
+	    
+	</topic>
+	
+	<category>
+	    <pattern>*</pattern>
+	    <template>
+	        <random>
+	            <li>I don't think I know that one.<br/>Try saying hi to start again!</li>
+	            <li>Try saying that again in a less stupid way.<br/>Try saying hi to start again!</li>
+	            <li>I literally have no response to that.<br/>Try saying hi to start again!</li>
+	            <li>Something went wrong. Try saying hi to start again.</li>
+	        </random>
+	    </template>
+	</category>
+</aiml>
