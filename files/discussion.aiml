@@ -3,7 +3,8 @@
 	<!-- insert your AIML categories here -->
 	<category>
 	    <pattern>HI</pattern>
-	    <template>Hello! Let's decide your new <set name="topic">career</set> together!<br/><br/>Do you prefer working with people or programs?</template>
+	    <template>Hello! Let's decide your new <set name="topic">career</set> together!<br/>
+		    <br/>Do you prefer working with people or programs?</template>
 	</category>
 	<category>
 	    <pattern>HELLO</pattern>
@@ -107,7 +108,7 @@
 	        <random>
 	            <li>I don't think I know that one.<br/>Try saying hi to start again!</li>
 	            <li>Try saying that again in a less stupid way.<br/>Try saying hi to start again!</li>
-	            <li>I literally have no response to that.<br/>Try saying hi to start again!</li>
+	            <li>I figuratively have no response to that.<br/>Try saying hi to start again!</li>
 	            <li>Something went wrong. Try saying hi to start again.</li>
 	        </random>
 	    </template>
